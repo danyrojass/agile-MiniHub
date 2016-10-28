@@ -1,12 +1,24 @@
 # app
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+Proyecto front base con AngularJS correspondiente a la materia Programación Web Frontend de la Facultad Politécnica de la Universidad Nacional de Asunción. Desarrollo Ágil en JavaScript.
 
-## Build & development
+# Estructura de Directorios
 
-Run `grunt` for building and `grunt serve` for preview.
+* app : Raiz del proyecto
 
-## Testing
+> * styles: imágenes del proyecto.
+> * styles: archivos css del proyecto.
+> * views: partials html.
+> * scripts: archivos JS del proyecto.
 
-Running `grunt test` will run the unit tests with karma.
+# Herramientas Utilizadas
+
+> * Node.js
+> * Yeoman
+> * Bower
+> * Grunt
+
+# Integrantes
+
+> * Daniel Rojas
+> * Luis Soto
