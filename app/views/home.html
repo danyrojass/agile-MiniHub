@@ -1,0 +1,53 @@
+<section class="container">
+  <div class="row">
+    <section class="col-md-2">
+      <img ng-src="{{infoUser.avatar_url}}" height="75" width="75"/>
+      <dt>{{infoUser.name}}</dt>
+      <a href="{{infoUser.html_url}}" target="_blank" >
+        {{infoUser.login}}
+      </a>
+      <small>
+          <dd><img ng-src="images/group.png" height="15" width="15"/> {{infoUser.company}}</dd>
+          <dd><img ng-src="images/marker.png" height="15" width="15"/> {{infoUser.location}}</dd>
+          <dd><img ng-src="images/clock.jpg" height="15" width="15"/> Joined on {{infoUser.created_at | date:'dd­ MMMM ­yyyy'}}</dd>
+      </small>
+    </section>
+    <section class="col-md-10">
+      <input type="text" id="usuario" name="usuario" />
+      <button class="btn-xs btn-default btn-del" ng-click="buscarUsuario()">Buscar</button>
+      <div class="panel  panel-default">
+        <div class="panel-heading">
+           <form class="form-inline">
+             <span>
+               <h4>Repos <span class="badge">{{repoData.length}}</span></h4>
+             </span>
+           </form>
+
+        </div>
+          <div class="panel-body">
+            <div class="list-group">
+               <div ng-repeat="repo in repoData" class="list-group-item ">
+                   <div class="row">
+                       <div class="col-md-10">
+                         <h4>
+                           <a href="{{repo.html_url}}" target="_blank" >
+                             {{repo.name}}
+                           </a>
+                           <small>{{repo.description}}</small>
+                         </h4>
+                       </div>
+                       <div class="col-md-2">
+                         <dl class="dl-horizontal" layout="row">
+                           {{repo.language}}<br>
+                           <img ng-src="images/star.png" height="15" width="15"/>{{repo.stargazers_count}}<br>
+                           <img ng-src="images/eye.png" height="15" width="15"/>{{repo.watchers_count}}<br>
+                           <img ng-src="images/fork.jpeg" height="15" width="15"/>{{repo.forks_count}}
+                         </dl>
+                        </div>
+                      </div>
+                     </div>
+                   </div>
+                  </div>
+    </section>
+  </div>
+</section>

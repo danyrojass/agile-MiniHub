@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+      <form id="signin" ng-controller="GhrepoCtrl" class="navbar-form navbar-right" role="form">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="username" ng-model="username" type="username" class="form-control" name="username" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" ng-model="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                    </div>
+
+                    <button type="submit" ng-click="userAuth()" class="btn btn-primary">Login</button>
+               </form>
+    </div>
+</div>
