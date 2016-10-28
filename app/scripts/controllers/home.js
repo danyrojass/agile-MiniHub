@@ -13,18 +13,13 @@
          $scope.repoData = {};
          $scope.username = $rootScope.username;
          $scope.credentials = $rootScope.credentials;
-	 $scope.auth = $rootScope.auth;
+	       $scope.auth = $rootScope.auth;
 
          var authorization = {'Authorization': $scope.credentials};
          var header = { headers: authorization };
 
          (function initialize() {
-		if($scope.auth === true){
-			getRepo();
-		}
-		else{
-			window.open('#/login', '_self',false);
-		}
+		        getRepo();
           })();
 
           function getRepo() {
@@ -41,8 +36,6 @@
                $scope.username = usuario;
                $scope.infoUser = data;
                getRepo();
-             }else{
-               window.alert('¡El usuario no se encuentra registrado en GitHub!');
              });
           };
        }
