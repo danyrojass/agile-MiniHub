@@ -1,4 +1,4 @@
-# app
+# agile-MiniHub
 
 Proyecto front base con AngularJS correspondiente a la materia Programación Web Frontend de la Facultad Politécnica de la Universidad Nacional de Asunción. Desarrollo Ágil en JavaScript.
 
